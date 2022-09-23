@@ -44,7 +44,7 @@ def get_unique_industries(path):
         if industry_type != "":
             list_of_industry_types.append(industry_type)
 
-        return list(set(list_of_industry_types))
+    return list(set(list_of_industry_types))
 
 
 def filter_by_industry(jobs, industry):
@@ -81,21 +81,18 @@ def get_max_salary(path):
 
 
 def get_min_salary(path):
-    """Get the minimum salary of all jobs
 
-    Must call `read`
+    data = read(path)
 
-    Parameters
-    ----------
-    path : str
-        Must be passed to `read`
+    salaries = []
 
-    Returns
-    -------
-    int
-        The minimum salary paid out of all job opportunities
-    """
-    pass
+    for row in data:
+        salary = row["min_salary"]
+
+        if salary not in salaries and salary != "" and salary.isdigit():
+            salaries.append(int(salary))
+
+    return min(salaries)
 
 
 def matches_salary_range(job, salary):
