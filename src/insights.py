@@ -1,4 +1,3 @@
-from operator import is_
 from src.jobs import read
 
 
@@ -103,18 +102,15 @@ def matches_salary_range(job, salary):
 
 
 def filter_by_salary_range(jobs, salary):
-    """Filters a list of jobs by salary range
 
-    Parameters
-    ----------
-    jobs : list
-        The jobs to be filtered
-    salary : int
-        The salary to be used as filter
+    filtered_jobs = []
 
-    Returns
-    -------
-    list
-        Jobs whose salary range contains `salary`
-    """
-    return []
+    for j in jobs:
+        try:
+            verify_salary_range = matches_salary_range(j, salary)
+            if verify_salary_range:
+                filtered_jobs.append(j)
+        except ValueError:
+            pass
+
+    return filtered_jobs
