@@ -1,16 +1,10 @@
 # 🚧 README em construção 🚧
 
-<!-- Olá, Tryber!
+#### Setembro de 2022
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+# Ciência da computação
+## Python, introdução
 
-É essencial que você preencha esse documento por conta própria, ok?
+## Desenvolvidos src/jobs, src/insights, tests/brazilian/ e tests/counter/
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
+# Ademais arquivos e diretórios, bem como as configurações iniciais, foram fornecidos pela Trybe
